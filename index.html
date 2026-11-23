@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mon profil étudiant</title>
+
+    <script src="script.js" defer></script>
+
+    <style>
+        .important {
+            background-color: lightyellow;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="titre">Mon profil étudiant</h1>
+
+    <p id="message">
+        Bienvenue ! Personnalisez votre profil.
+    </p>
+
+    <label for="nom">Votre nom :</label>
+
+    <input type="text" id="nom" placeholder="Saisir votre nom">
+
+    <button id="btnAfficher">Afficher mon nom</button>
+
+    <button id="btnTitre">Modifier le titre</button>
+
+    <p id="apercu">En attente de saisie</p>
+
+    <hr>
+
+    <p id="texteApercu">
+        Voici le texte à personnaliser.
+    </p>
+
+    <label>
+        <input type="checkbox" id="gras"> Gras
+    </label>
+
+    <label>
+        <input type="checkbox" id="italique"> Italique
+    </label>
+
+    <p>Couleur du texte :</p>
+
+    <label>
+        <input type="radio" name="couleur" value="red"> Rouge
+    </label>
+
+    <label>
+        <input type="radio" name="couleur" value="blue"> Bleu
+    </label>
+
+    <label>
+        <input type="radio" name="couleur" value="green"> Vert
+    </label>
+
+    <hr>
+
+    <label for="domaine">Choisir un domaine :</label>
+
+    <select id="domaine">
+        <option value="">-- Choisir --</option>
+        <option value="informatique">Informatique</option>
+        <option value="gestion">Gestion</option>
+        <option value="marketing">Marketing</option>
+        <option value="multimedia">Multimédia</option>
+    </select>
+
+    <p id="resultatDomaine"></p>
+
+</body>
+</html>
